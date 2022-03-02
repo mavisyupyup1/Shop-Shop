@@ -22,7 +22,7 @@ useEffect(()=>{
     });
     //lets also tak each production and save it to indexedDB using the helper function
     data.products.forEach((product)=>{
-      idbPromise('product','put',product)
+      idbPromise('products','put',product)
     })
   } else if(!loading){
     //since we are offline, get all the data from the `products` store
