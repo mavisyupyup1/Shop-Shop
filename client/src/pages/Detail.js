@@ -39,11 +39,20 @@ function Detail() {
         _id: id,
         purchaseQuantity: parseInt(itemInCart.purchaseQuantity) + 1,
       });
+      //if we are updating quantity, use exisiting item data and incrment purchaseQuantity value by one
+      idbPromise('cart','put',{
+        ...itemInCart,
+        purchaseQuantity:parseInt(itemInCart.purchaseQuantity) +1
+      })
     } else {
       dispatch({
         type: ADD_TO_CART,
         product: { ...currentProduct, purchaseQuantity: 1 },
       });
+      //if that product isnt in cart yet, add it to the current shoppign cart in indexedDB
+      idbPromise('cart','put',{
+        ...currentProduct,purchaseQuantity:1
+      })
     }
   };
 
@@ -52,6 +61,7 @@ function Detail() {
       type:REMOVE_FROM_CART,
       _id:currentProduct._id
     })
+    idbPromise('cart','delete',{...currentProduct})
   }
 
 
