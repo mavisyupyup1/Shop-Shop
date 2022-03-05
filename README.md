@@ -1,7 +1,7 @@
 # Shop-Shop
 
 ## Description
-Shop-Shop is an e-commerce application powered by MERN. The app utilize REACT's context API to manage global state and Stripe api to take payment.
+Shop-Shop is an e-commerce application powered by MERN (MongoDB, Express, REACT, NODE). The app utilize REACT's context API to manage global state, JSON Web Token (JWT) for authentication and Stripe api to take payment.
 
 ## Built with
 
@@ -14,7 +14,7 @@ Shop-Shop is an e-commerce application powered by MERN. The app utilize REACT's 
 * Stripe 
 * MongoDB Atlas
 * Heroku
-* Bcrypt
+* JWT 
 ## Installation 
 * Download or clone the repo
 * Node.js framework and MONGO_DB is required to run the application
