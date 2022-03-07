@@ -1,7 +1,7 @@
 # Shop-Shop
 
 ## Description
-Shop-Shop is an e-commerce single page application(SPA) powered by MERN (MongoDB, Express, REACT, NODE). The app utilize REACT's context API to manage global state, JSON Web Token (JWT) for authentication and Stripe api to take payment. This application is a mobile first,Progressive Web Application that leverages IndexDB and services worker for offline functionalities.
+Shop-Shop is an e-commerce single page application(SPA) powered by MERN (MongoDB, Express, REACT, NODE). The app utilize REACT's context API to manage global state, JSON Web Token (JWT) for authentication and Stripe api for payment. This application is a mobile first,Progressive Web Application that leverages IndexDB and services worker for offline functionalities.
 
 ## Built with
 
